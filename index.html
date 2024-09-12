@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Null Survey</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="survey-styles.css"/>
-    
+    <meta name="viewport" content="width=screen-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 id="title">Null Devs Survey Form</h1>
-    <p id="description">Please answer these simple questions</p>
-    <fieldset>
-      <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
-        <label for="name" id="name-label">Name <input type="text" id="name"  placeholder="input your name" required></label>
-        <label for="email" id="email-label">Email <input type="email" id="email" placeholder="input your email" required></label>
-        <label for="number" id="number-label">Pick a Number from 0-10<input type="number" id="number" min="0" max="10" placeholder="0-10"></label>
-        <label for="dropdown"> How are you feeling
-          <select id="dropdown">
-            <option value="2">neutral</option>
-            <option value="3">good</option>
-            <option value="1">bad</option>
-          </select>
-        </label>
-        <label for="dropdown">Yes or No?
-          <input type="radio" id="dropdown" name="yes-or-no" value="1" checked>yes
-          <input type="radio" id="dropdown" name="yes-or-no" value="0">no
-        </label>
-        <p>What sports do you play?</p>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label class="inline" for="vehicle1"> Basketball</label>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label class="inline" for="vehicle2"> Football</label>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label class="inline" for="vehicle3"> Baseball</label>
-        <p>Additional comments</p>
-        <label for="comments">
-          <textarea id="comments" rows="3" cols="30" placeholder="Additional Comments..."></textarea>
-        <label>
-          <input id="submit" type="submit" value="Submit">
-        </label>
-          </fieldset>
-          </label>
+
+  <body class="body">
+    <!--Nav bar-->
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://yt3.googleusercontent.com/Bgj3qWbrXmXCXfaEMncCERO4AICuXPQX0lnxtSxaTB0LbD4rz92QlxZ93UhRzA5GGUz5Crd-ig=s160-c-k-c0x00ffffff-no-rj" alt="gaming-chair-logo">
+        <p class="company-name">Pro Gaming <br>Chairs</p>
+      </div>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <!-- email form -->
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <h2 class="form-title">Affordable, Ergonomic gaming chairs</h2>
+        <input id="email" name="email" type="email" placeholder="Enter your email address"><br>
+        <input id="submit" type="submit" value="Get Started">
       </form>
+      <section id="features">
+        
+        <div class="quality-assurance feature-box">
+          <img class="icon inline-block"src="https://th.bing.com/th/id/R.ee80a3f903f4c69c750fc8b2019a89e8?rik=Vb70Ad4ulDwaiQ&pid=ImgRaw&r=0">
+          
+          <p class="inline-block left"><span class="feature-title">Premium Materials</span> <br>Our premium materials ensure durability, comfort, and a top-tier gaming performance.
+        </div>
+
+        <div class="quality-assurance feature-box">
+          <img class="icon inline-block"src="https://th.bing.com/th/id/R.a88bc27d7a67fc4a05263671a81b2538?rik=5UiaV6PU%2bJ3L9g&pid=ImgRaw&r=0">
+          
+          <p class="inline-block left"><span class="feature-title">Fast Shipping</span> <br>We guarentee shipping anywhere in the world in under 7 days or youre money back guarenteed.
+        </div>
+
+        <div class="quality-assurance feature-box">
+          <img class="icon inline-block"src="https://th.bing.com/th/id/R.6f16b95a0438d022be846429d78b088e?rik=1UYqzkhEH9wY6w&pid=ImgRaw&r=0">
+          
+          <p class="inline-block left"><span class="feature-title">Quality Assurance</span> <br>Rigorous quality assurance guarantees top-notch performance and durability.
+        </div>
+      </section>
+      <section id="how-it-works">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xpkG0FGEogQ?si=6erjKQggB_4DL6sa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+      <!-- basic option-->
+      <section id="pricing">
+        <div class="listing basic-option">
+          <h3 class="listing-title">Basic Model</h3>
+          <h2 class="price">$895</h2>
+          <div class="list">
+            <p>7 Color Ways</li>
+            <p>Dimensions:<br>44¼" H 30½" W 29" D</li>
+            <p>Optimize Posture with <br>forward-leaning alignment.</div>
+          </ul>
+          <button class="select">SELECT</button>
+        </div>
+      <!-- Advanced Model -->
+        <div class="listing basic-option">
+          <h3 class="listing-title">Advanced Model</h3>
+          <h2 class="price">$1,020</h2>
+          <div class="list">
+            <p>6 Color Ways</li>
+            <p>Dimensions:<br>37¾" H 24½" W 19¾" D</li>
+            <p>3 Height Adjustments</div>
+          </ul>
+          <button class="select">SELECT</button>
+        </div>
+      <!-- Pro Ergonomic Model -->      <div class="listing basic-option">
+          <h3 class="listing-title">Pro Ergonomic Model</h3>
+          <h2 class="price">$1,995</h2>
+          <div class="list">
+            <p>8 Color Ways</li>
+            <p>Dimensions:<br>45" H 29½" W 29" D</li>
+            <p>Additional layer of foam for lasting comfort</div>
+          </ul>
+          <button class="select">SELECT</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="extra-links">
+        <div class="links">
+        <a href="#form">Privacy</a>
+        <a href="#form">Terms</a>
+        <a href="#form">Contact</a>
+        </div>
+        <p class="text">Copyright 2024, Pro Gaming Chairs</p>
+      </div>
+    </footer>
   </body>
 </html>
